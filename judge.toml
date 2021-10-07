@@ -1,0 +1,7 @@
+[jobs.lexer]
+
+image = { source = "dockerfile", path = ".", tag = "pascal-lex-example" }
+
+run = [
+  "python word_analyze.py $input",
+]
