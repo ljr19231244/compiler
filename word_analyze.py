@@ -11,6 +11,7 @@ sign = ['=', ';', '(', ')', '{', '}', '+', '*', '/', '<', '>']
 tmp = ''
 
 file = open(sys.argv[1])
+# file = open('input.txt')
 char = file.read(1)
 while char:
     if char in Non_digit or char in Digit or char in sign:
@@ -76,8 +77,8 @@ while char:
                 print('Gt')
             char = file.read(1)
 
-    # 是空格
-    elif char == ' ' or char == '\n':
+    # 是空格或者是回车
+    elif char == ' ' or char == '\n' or char == '\t' or char == '\r':
         char = file.read(1)
 
     # 报错
