@@ -50,6 +50,7 @@ while char:
                 if char == '=':
                     print('Eq')
                     char = file.read(1)
+                    continue
                 else:
                     print('Assign')
                     continue
