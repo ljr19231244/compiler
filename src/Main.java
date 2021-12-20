@@ -35,7 +35,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        CharStream inputStream = CharStreams.fromString(file.toString());
+        CharStream inputStream = CharStreams.fromString(input.toString());
         miniSysYLexer lexer = new miniSysYLexer(inputStream);
         CommonTokenStream tokenStream = new CommonTokenStream(lexer);
         miniSysYParser parser = new miniSysYParser(tokenStream);
