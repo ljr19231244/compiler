@@ -3,5 +3,5 @@
 image = { source = "dockerfile", path = "."}
 
 run = [
-    "java ./src/Main.java $input $ir",
+    "java -jar lab1.jar $input $ir",
 ]
