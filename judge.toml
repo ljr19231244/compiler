@@ -1,4 +1,4 @@
-[jobs.mdarray]
+[jobs.mem2reg]
 
 image = { source = "dockerfile", path = "."}
 
